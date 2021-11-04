@@ -3,7 +3,7 @@
         manifest.xml
         framework_manifest.xml
 -->
-<manifest version="2.0" type="framework">
+<manifest version="4.0" type="framework">
     <hal format="hidl">
         <name>android.frameworks.displayservice</name>
         <transport>hwbinder</transport>
@@ -103,4 +103,14 @@
         <version>29</version>
         <version>30</version>
     </system-sdk>
+    <hal format="hidl">
+        <name>android.hidl.manager</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::IServiceManager/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hidl.token</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ITokenManager/default</fqname>
+    </hal>
 </manifest>

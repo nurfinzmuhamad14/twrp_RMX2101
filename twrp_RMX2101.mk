@@ -46,3 +46,20 @@ PRODUCT_PACKAGES_ENG += \
 # Set build date to Jan 1 2009 00:00:00
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.date.utc=1230768000
+
+
+# Encryption
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.volume.filenames_mode=aes-256-cts
+
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
+
+# ION
+PRODUCT_PACKAGES += \
+    libion.recovery
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
