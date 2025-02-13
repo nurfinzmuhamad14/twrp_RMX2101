@@ -4,10 +4,10 @@ Current Status : Project closed
 
 
 # Bugs :
-- SD Card not working.
+- ~~SD Card And OTG not working~~.(fixed)
 - FBE Decrypt is failing.
 
 # Download:
-It can be found under the release section.
+Soon
 
 
